@@ -1,30 +1,38 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var cleanCSS = require('gulp-clean-css');
+/*jshint esversion: 6 */
 
-var minify = require('gulp-minify');
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const cleanCSS = require('gulp-clean-css');
+const autoprefixer = require('gulp-autoprefixer');
+const minify = require('gulp-minify');
 
+/* Task to copy pages from the src folder into match dist folders */
 gulp.task('copyPages', function() {
-  gulp.src('./src/**/*.html')
+  return gulp.src('./src/**/*.html')
   .pipe(gulp.dest('./dist'));
 });
 
+/* Runs sass on a file and passes the resulting file into the css folder */
 gulp.task('sass', function () {
   return gulp.src('./src/sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./src/css'));
 });
 
+/* Minifies css, autoprefixes, and copies into the dist styles folder */
 gulp.task('minify-css', ['sass'], function() {
   return gulp.src('./src/css/*.css')
     .pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(autoprefixer())
     .pipe(gulp.dest('./dist/styles'));
 });
 
+/* Watches for changes and runs tasks accordingly */
 gulp.task('watch', ['minify-css'], function () {
   gulp.watch('./src/sass/**/*.scss', ['sass']);
   gulp.watch('./src/css/**/*.css', ['minify-css']);
   gulp.watch('./src/**/*.html', ['copyPages']);
 });
 
+/* Runs all tasks and watches for changes */
 gulp.task('default', ['copyPages', 'sass', 'minify-css', 'watch']);
