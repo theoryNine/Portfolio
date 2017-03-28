@@ -22,9 +22,9 @@ gulp.task('minify-css', ['sass'], function() {
 });
 
 gulp.task('watch', ['minify-css'], function () {
-  gulp.watch('./sass/**/*.scss', ['sass']);
+  gulp.watch('./src/sass/**/*.scss', ['sass']);
   gulp.watch('./src/css/**/*.css', ['minify-css']);
-  gulp.watch('./src', ['copyPages']);
+  gulp.watch('./src/**/*.html', ['copyPages']);
 });
 
 gulp.task('default', ['copyPages', 'sass', 'minify-css', 'watch']);
