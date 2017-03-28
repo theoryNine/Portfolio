@@ -17,6 +17,9 @@
   },
   "homepage": "https://gitlab.com/anselcolvin/portfolio-alpha#README",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.0.4",
+    "gulp-minify": "0.0.15",
+    "gulp-sass": "^3.1.0"
   }
 }
