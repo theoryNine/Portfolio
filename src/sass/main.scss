@@ -1,5 +1,25 @@
 @import 'variables';
+@import 'text-styles';
 
-html {
-  background-color: $black;
+// Section styles
+body {
+  margin: auto 0;
 }
+
+.container {
+  margin: 0 auto;
+  max-width: 768px;
+}
+
+.hero {
+  height: 300px;
+}
+
+.primary-section {
+  background-color: $primary-color;
+}
+// End section styles
+
+// Nav Styles
+
+// End nav styles

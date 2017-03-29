@@ -1,2 +1,24 @@
-html {
-  background-color: #000; }
+.white-text {
+  color: #f8f7f9; }
+
+.text-center {
+  text-align: center; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+body {
+  margin: auto 0; }
+
+.container {
+  margin: 0 auto;
+  max-width: 768px; }
+
+.hero {
+  height: 300px; }
+
+.primary-section {
+  background-color: #6e4693; }
