@@ -5,11 +5,15 @@ const sass = require('gulp-sass');
 const cleanCSS = require('gulp-clean-css');
 const autoprefixer = require('gulp-autoprefixer');
 const minify = require('gulp-minify');
+const livereload = require('gulp-livereload');
+
+livereload({ start: true });
 
 /* Task to copy pages from the src folder into match dist folders */
 gulp.task('copyPages', function() {
   return gulp.src('./src/**/*.html')
-  .pipe(gulp.dest('./dist'));
+  .pipe(gulp.dest('./dist'))
+  .pipe(livereload());
 });
 
 /* Runs sass on a file and passes the resulting file into the css folder */
@@ -32,6 +36,7 @@ gulp.task('watch', ['minify-css'], function () {
   gulp.watch('./src/sass/**/*.scss', ['sass']);
   gulp.watch('./src/css/**/*.css', ['minify-css']);
   gulp.watch('./src/**/*.html', ['copyPages']);
+  livereload.listen();
 });
 
 /* Runs all tasks and watches for changes */
