@@ -16,6 +16,12 @@ gulp.task('copyPages', function() {
   .pipe(livereload());
 });
 
+/* Copy media files */
+gulp.task('copyMedia', function() {
+  return gulp.src('./src/media/**.*')
+  .pipe(gulp.dest('./dist/media'));
+});
+
 /* Runs sass on a file and passes the resulting file into the css folder */
 gulp.task('sass', function () {
   return gulp.src('./src/sass/**/*.scss')
@@ -40,4 +46,4 @@ gulp.task('watch', ['minify-css'], function () {
 });
 
 /* Runs all tasks and watches for changes */
-gulp.task('default', ['copyPages', 'sass', 'minify-css', 'watch']);
+gulp.task('default', ['copyPages', 'sass', 'minify-css', 'copyMedia', 'watch']);

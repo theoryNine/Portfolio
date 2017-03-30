@@ -18,7 +18,9 @@ body {
   max-width: 768px; }
 
 .hero {
-  height: 300px; }
+  height: 600px;
+  overflow: hidden;
+  position: relative; }
 
 .primary-section {
   background-color: #2a1063; }
@@ -27,4 +29,16 @@ body {
   background-color: #f8f7f9;
   border: 1px solid #d400ff;
   color: #000;
-  width: 100px; }
+  width: 100px;
+  z-index: 10; }
+
+video {
+  opacity: .9;
+  width: 100%;
+  z-index: 0; }
+
+.overlay {
+  left: 45%;
+  position: absolute;
+  top: 38%;
+  z-index: 1; }
