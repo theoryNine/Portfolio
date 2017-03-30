@@ -23,12 +23,12 @@ body {
   position: relative;
 
   h1 {
-    font-size: 4em;
+    font-size: 6em;
     margin-bottom: 0;
   }
 
   h2 {
-    font-size: 3em;
+    font-size: 4em;
     margin-top: .1em;
   }
 }
@@ -56,9 +56,9 @@ video {
 }
 
 .overlay {
-  left: 37%;
   position: absolute;
-  top: 25%;
+  top: 20%;
+  width: 100%;
   z-index: 1;
 }
 
