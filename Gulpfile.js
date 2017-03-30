@@ -16,6 +16,12 @@ gulp.task('copyPages', function() {
   .pipe(livereload());
 });
 
+/* Copy scripts from src to dist */
+gulp.task('copyScripts', function() {
+  return gulp.src('./src/**/*.js')
+  .pipe(gulp.dest('./dist'));
+});
+
 /* Copy media files */
 gulp.task('copyMedia', function() {
   return gulp.src('./src/media/**.*')
@@ -46,4 +52,4 @@ gulp.task('watch', ['minify-css'], function () {
 });
 
 /* Runs all tasks and watches for changes */
-gulp.task('default', ['copyPages', 'sass', 'minify-css', 'copyMedia', 'watch']);
+gulp.task('default', ['copyPages', 'copyScripts', 'sass', 'minify-css', 'copyMedia', 'watch']);
