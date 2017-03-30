@@ -3,7 +3,7 @@
 
 // Section styles
 html {
-  font-size: 13px;
+  font-size: 15px;
 }
 
 body {
@@ -23,12 +23,12 @@ body {
   position: relative;
 
   h1 {
-    font-size: 6em;
+    font-size: 5em;
     margin-bottom: 0;
   }
 
   h2 {
-    font-size: 4em;
+    font-size: 3em;
     margin-top: .1em;
   }
 }
@@ -38,6 +38,10 @@ body {
 }
 
 // Nav Styles
+.nav-bar ul li {
+  display: inline-block;
+  list-style-type: none;
+}
 
 // Buttons
 .resumes button {

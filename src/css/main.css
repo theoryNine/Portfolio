@@ -11,7 +11,7 @@
   text-align: right; }
 
 html {
-  font-size: 13px; }
+  font-size: 15px; }
 
 body {
   font-family: 'Exo 2', sans-serif;
@@ -27,14 +27,18 @@ body {
   overflow: hidden;
   position: relative; }
   .hero h1 {
-    font-size: 6em;
+    font-size: 5em;
     margin-bottom: 0; }
   .hero h2 {
-    font-size: 4em;
+    font-size: 3em;
     margin-top: .1em; }
 
 .primary-section {
   background-color: #2a1063; }
+
+.nav-bar ul li {
+  display: inline-block;
+  list-style-type: none; }
 
 .resumes button {
   background-color: #f8f7f9;
