@@ -2,6 +2,10 @@
 @import 'text-styles';
 
 // Section styles
+.content {
+  padding: 20px 5px;
+}
+
 html {
   font-size: 16px;
 }
@@ -13,11 +17,12 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 768px;
+  max-width: 900px;
 }
 
 .hero {
-  font-family: 'Inika', serif;
+  color: $dark-gray;
+  //font-family: 'Inika', serif;
   height: 550px;
   margin-top: 50px;
   overflow: hidden;
@@ -34,17 +39,32 @@ body {
   }
 }
 
+h3 {
+  font-size: 1.8em;
+  margin-top: 0;
+}
+
+.logo {
+  display: none;
+}
+
 .primary-section {
-  background-color: $primary-color;
+  background-color: $gray;
+}
+
+section {
+  margin-right: 0;
+}
+
+.row {
+  width: 100%;
 }
 
 // Nav Styles
 .navigation {
-  background-color: $dark-gray;
-  border-bottom: 1px solid $white;
-  color: $white;
-  margin-top: -16px;
-  padding-top: 16px;
+  background-color: $white;
+  border-bottom: 1px solid $dark-gray;
+  color: $dark-gray;
   position: fixed;
   top: 0;
   width: 100%;
@@ -52,33 +72,54 @@ body {
 }
 
 .nav-bar {
+  display: inline-block;
   font-size: 1em;
   text-align: center;
-}
+  vertical-align: top;
+  width: 100%;
 
-.nav-bar ul {
-  padding-left: 0;
-}
+  ul {
+    padding-left: 0;
 
-.nav-bar ul li {
-  display: inline-block;
-  list-style-type: none;
-  margin-left: .5em;
+    li {
+      display: inline-block;
+      list-style-type: none;
+      margin-left: .5em;
+    }
+  }
 }
 
 // Buttons
-.resumes button {
-  background-color: $white;
-  border: 1px solid $pink;
-  color: $black;
-  width: 100px;
-  z-index: 10;
+.resumes {
+  button {
+    background-color: $white;
+    border: 1px solid $dark-gray;
+    color: $black;
+    font-size: 1em;
+    height: 50px;
+    width: 155px;
+    z-index: 10;
+  }
+}
+
+.resumes {
+  button:hover {
+    box-shadow: -3px 0 20px 9px $white;
+  }
+}
+
+#left-resume {
+  border-top-left-radius: 150px;
+}
+
+#right-resume {
+  border-bottom-right-radius: 150px;
 }
 
 // Video styling
 video {
   height: 100%;
-  opacity: .9;
+  opacity: .7;
   width: auto;
   z-index: 0;
 }
@@ -97,9 +138,10 @@ video {
 @media (min-width: 500px) {
   .nav-bar {
     font-size: 1.2em;
-    margin-right: .5em;
-    text-align: right;
+    text-align: left;
+    width: 80%;
   }
+
   .hero {
     h1 {
       font-size: 5em;
@@ -110,21 +152,38 @@ video {
 
     }
   }
+
+  .logo {
+    display: inline-block;
+    max-width: 75px;
+    padding-top: 5px;
+    width: 12%;
+
+    img {
+      max-width: 55px;
+    }
+  }
 }
 
 // Desktop
 @media (min-width: 769px) {
+  .content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .hero {
     height: 600px;
   }
+
   .nav-bar {
     font-size: 1.3em;
   }
+
   video {
     height: auto;
     width: 100%;
   }
-
 }
 
 // Special Hero Breakpoint

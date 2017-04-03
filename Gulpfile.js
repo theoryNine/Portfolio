@@ -54,6 +54,9 @@ gulp.task('watch', ['minify-css'], function () {
   gulp.watch('./src/sass/**/*.scss', ['sass']);
   gulp.watch('./src/css/**/*.css', ['minify-css']);
   gulp.watch('./src/**/*.html', ['copyPages']);
+  gulp.watch('./src/images/*.**', ['copyImages']);
+  gulp.watch('./src/scripts/*.**', ['copyScripts']);
+  gulp.watch('./src/media/*.**', ['copyMedia']);
   livereload.listen();
 });
 
