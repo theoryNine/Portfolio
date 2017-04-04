@@ -43,7 +43,7 @@ gulp.task('sass', function () {
 
 /* Minifies css, autoprefixes, and copies into the dist styles folder */
 gulp.task('minify-css', ['sass'], function() {
-  return gulp.src('./src/css/*.css')
+  return gulp.src('./src/css/**/*.css')
     .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(autoprefixer())
     .pipe(gulp.dest('./dist/styles'));

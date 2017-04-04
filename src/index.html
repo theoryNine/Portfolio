@@ -113,7 +113,7 @@
   <section class="contact content row primary-section" id="contact">
     <div class="container">
      <h3 class="text-center fade-load">Contact Me</h3>
-     <div class="form-map row">
+     <div class="form-map">
       <div class="contact-form">
         <form action="form-processing.php" method="post">
           <div>
@@ -121,11 +121,11 @@
             <input type="text" id="name" name="user_name">
           </div>
           <div>
-            <label for="mail">E-mail Address</label>
+            <label for="mail">E-mail Address <span class="fail">(required)</span></label>
             <input type="email" id="mail" name="user_mail">
           </div>
           <div>
-            <label for="msg">Message</label>
+            <label for="msg">Message <span class="fail">(required)</span></label>
             <textarea id="msg" name="user_message"></textarea>
           </div>
           <div class="form-buttons">
@@ -152,7 +152,11 @@
         </div>
       </div>
     </div>
-    <div class="social-bar"></div>
+    <div class="social-bar">
+      <a href="https://www.linkedin.com/in/anselcolvin/"><div class="social linkedin"><i class="fa fa-linkedin" aria-hidden="false"></i></div></a>
+      <a href="https://gitlab.com/anselcolvin"><div class="social gitlab"><i class="fa fa-gitlab" aria-hidden="false"></i></div></a>
+      <a href="https://twitter.com/anselcolvin"><div class="social twitter"><i class="fa fa-twitter" aria-hidden="false"></i></div></a>
+    </div>
   </div>
 </section>
 <!-- End Contact Section -->
@@ -168,6 +172,7 @@
 <script async defer
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfldS_8yLaRl1eav3HdUS1Xf-gFy6aiw4&callback=initMap">
 </script>
+<script src="https://use.fontawesome.com/43580bea7c.js"></script>
 
 </body>
 

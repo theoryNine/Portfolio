@@ -87,6 +87,9 @@ section {
   text-align: center;
   vertical-align: top;
   width: 100%; }
+  .nav-bar a {
+    color: #222222;
+    text-decoration: none; }
   .nav-bar ul {
     padding-left: 0; }
     .nav-bar ul li {
@@ -116,23 +119,47 @@ section {
 .contact-form {
   vertical-align: top;
   width: 100%; }
+  .contact-form input {
+    border: 1px solid #222222;
+    height: 2.5em;
+    width: 95%; }
+  .contact-form label {
+    margin-bottom: 1px;
+    margin-top: 3px; }
+  .contact-form textarea {
+    border: 1px solid #222222;
+    height: 4em;
+    width: 95%; }
 
-.form-buttons button {
-  height: 40px;
-  width: 125px; }
+.form-map {
+  margin-bottom: 1em;
+  width: 96%; }
 
-.form-buttons [type="submit"] {
-  background-color: green; }
-
-.form-buttons [type="reset"] {
-  background-color: red; }
+.form-buttons {
+  margin-bottom: 1em;
+  margin-top: 1em; }
+  .form-buttons button {
+    border: 1px solid #222222;
+    color: #f8f7f9;
+    font-family: 'Alegreya', cursive;
+    font-size: 1.3em;
+    height: 40px;
+    width: 125px; }
+  .form-buttons [type="submit"] {
+    background-color: #2ead6b; }
+  .form-buttons [type="submit"]:hover {
+    background-color: #96db90; }
+  .form-buttons [type="reset"] {
+    background-color: #b70015; }
+  .form-buttons [type="reset"]:hover {
+    background-color: #ff002e; }
 
 .map {
   width: 100%; }
 
 #map {
   border: 1px solid #222222;
-  height: 13em;
+  height: 15em;
   width: 100%; }
 
 label {
@@ -170,6 +197,44 @@ video {
   width: 100%;
   z-index: 1; }
 
+.fail {
+  color: #b70015;
+  font-size: .6em;
+  padding-bottom: 2px; }
+
+.social {
+  color: #f8f7f9;
+  display: block;
+  font-size: 2em;
+  line-height: 2em;
+  margin-bottom: .5em;
+  text-align: center;
+  width: 100%; }
+
+.social-bar {
+  width: 96%; }
+
+.social-bar:last-child {
+  margin-bottom: 0; }
+
+.twitter {
+  background-color: #1da1f2; }
+
+.twitter:hover {
+  background-color: #5851db; }
+
+.linkedin {
+  background-color: #0077b5; }
+
+.linkedin:hover {
+  background-color: #00a0dc; }
+
+.gitlab {
+  background-color: #fc6d26; }
+
+.gitlab:hover {
+  background-color: #fca326; }
+
 @media (min-width: 600px) {
   .contact-form {
     display: inline-block;
@@ -178,9 +243,6 @@ video {
     font-size: 1.2em;
     text-align: left;
     width: 80%; }
-    .nav-bar a {
-      text-decoration: none;
-      color: #222222; }
   .hero h1 {
     font-family: 'Alegreya', cursive;
     font-size: 5em; }
@@ -198,7 +260,18 @@ video {
     width: 25%; }
   .map {
     display: inline-block;
-    width: 49%; } }
+    width: 49%; }
+  .social {
+    color: #f8f7f9;
+    display: inline-block;
+    width: 32%; }
+  .form-map {
+    width: 100%; }
+  .map {
+    width: 50%; }
+  .social-bar {
+    text-align: center;
+    width: 100%; } }
 
 @media (min-width: 769px) {
   .content {
