@@ -17,7 +17,9 @@
     opacity: 1; } }
 
 .content {
-  padding: 35px 5px; }
+  padding-bottom: 35px;
+  padding-left: 5px;
+  padding-top: 35px; }
 
 html {
   font-size: 16px; }
@@ -29,6 +31,11 @@ body {
 .container {
   margin: 0 auto;
   max-width: 900px; }
+
+.add-pad {
+  padding-bottom: 2em;
+  padding-left: 5px;
+  padding-top: 2em; }
 
 .fade-load {
   animation: fadein 3s; }
@@ -67,9 +74,6 @@ p {
 
 .row {
   width: 100%; }
-
-section {
-  margin-right: 0; }
 
 .navigation {
   background-color: #f8f7f9;
@@ -111,10 +115,12 @@ section {
   font-weight: 700; }
 
 #left-resume {
-  border-top-left-radius: 150px; }
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px; }
 
 #right-resume {
-  border-bottom-right-radius: 150px; }
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px; }
 
 .contact-form {
   vertical-align: top;
@@ -122,18 +128,20 @@ section {
   .contact-form input {
     border: 1px solid #222222;
     height: 2.5em;
-    width: 95%; }
+    max-width: 100%;
+    width: 98%; }
   .contact-form label {
     margin-bottom: 1px;
     margin-top: 3px; }
   .contact-form textarea {
     border: 1px solid #222222;
     height: 4em;
-    width: 95%; }
+    max-width: 100%;
+    width: 97%; }
 
 .form-map {
   margin-bottom: 1em;
-  width: 96%; }
+  width: 100%; }
 
 .form-buttons {
   margin-bottom: 1em;
@@ -144,7 +152,7 @@ section {
     font-family: 'Alegreya', cursive;
     font-size: 1.3em;
     height: 40px;
-    width: 125px; }
+    width: 49%; }
   .form-buttons [type="submit"] {
     background-color: #2ead6b; }
   .form-buttons [type="submit"]:hover {
@@ -159,8 +167,8 @@ section {
 
 #map {
   border: 1px solid #222222;
-  height: 15em;
-  width: 100%; }
+  height: 17em;
+  width: 98%; }
 
 label {
   display: block;
@@ -212,7 +220,7 @@ video {
   width: 100%; }
 
 .social-bar {
-  width: 96%; }
+  width: 98%; }
 
 .social-bar:last-child {
   margin-bottom: 0; }
@@ -261,12 +269,15 @@ video {
   .map {
     display: inline-block;
     width: 49%; }
+  #map {
+    width: 100%; }
   .social {
     color: #f8f7f9;
     display: inline-block;
     width: 32%; }
-  .form-map {
-    width: 100%; }
+  /*.form-map {
+    width: 97%;
+  }*/
   .map {
     width: 50%; }
   .social-bar {
@@ -278,7 +289,7 @@ video {
     padding-left: 0;
     padding-right: 0; }
   .hero {
-    height: 600px; }
+    height: 700px; }
   .nav-bar {
     font-size: 1.3em; }
   video {
@@ -286,7 +297,7 @@ video {
     height: auto;
     width: 100%; } }
 
-@media (min-width: 769px) and (max-width: 1100px) {
+@media (min-width: 769px) and (max-width: 1000px) {
   video {
     height: 100%;
     width: auto; } }
