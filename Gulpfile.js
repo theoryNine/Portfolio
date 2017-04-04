@@ -11,7 +11,7 @@ livereload({ start: true });
 
 /* Task to copy pages from the src folder into match dist folders */
 gulp.task('copyPages', function() {
-  return gulp.src('./src/**/*.html')
+  return gulp.src('./src/**/*.{html,php}')
   .pipe(gulp.dest('./dist'))
   .pipe(livereload());
 });

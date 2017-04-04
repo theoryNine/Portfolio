@@ -29,6 +29,10 @@ body {
   animation: fadein 3s;
 }
 
+.contact {
+  box-shadow: 0 5px 22px -10px $dark-gray;
+}
+
 .hero {
   box-shadow: 2px 1px 20px $dark-gray;
   color: $white;
@@ -143,7 +147,24 @@ section {
 
 // Contact Section
 .contact-form {
+  vertical-align: top;
   width: 100%;
+}
+
+.form-buttons {
+
+  button {
+    height: 40px;
+    width: 125px;
+  }
+
+  [type="submit"] {
+    background-color: green;
+  }
+
+  [type="reset"] {
+    background-color: red;
+  }
 }
 
 .map {
@@ -151,10 +172,15 @@ section {
 }
 
 #map {
+  border: 1px solid $dark-gray;
   height: 13em;
   width: 100%;
 }
 
+label {
+  display: block;
+  width: 100%;
+}
 
 // Portfolio Section
 .portfolio {
@@ -211,18 +237,30 @@ video {
 
 // Tablet
 @media (min-width: 600px) {
+.contact-form {
+  display: inline-block;
+  width: 49%;
+}
+
   .nav-bar {
     font-size: 1.2em;
     text-align: left;
     width: 80%;
+
+    a {
+      text-decoration: none;
+      color: $dark-gray;
+    }
   }
 
   .hero {
     h1 {
+      font-family: 'Alegreya', cursive;
       font-size: 5em;
     }
 
     h2 {
+      font-family: 'Alegreya', cursive;
       font-size: 3em;
 
     }
@@ -240,10 +278,6 @@ video {
   }
   .skill-card {
     width: 25%;
-  }
-  .contact-form {
-    display: inline-block;
-    width: 49%;
   }
 
   .map {

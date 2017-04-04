@@ -8,7 +8,7 @@
   <meta name="description" content="Professional website of Ansel Colvin, Front-end Developer">
   <link rel="icon" type="image/png" href="images/favicon.ico">
   <link rel="stylesheet" href="./styles/main.css">
-  <link href="https://fonts.googleapis.com/css?family=Exo+2|Inika:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya:700i|Exo+2" rel="stylesheet">
 
   <!--[if lt IE 9]>
   <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -25,10 +25,10 @@
         </div>
         <nav class="nav-bar">
          <ul>
-          <li>About &middot;</li>
-          <li>Skills &middot;</li>
-          <li>Portfolio &middot;</li>
-          <li>Contact</li>
+          <li><a href="#about">About</a> &middot;</li>
+          <li><a href="#skills">Skills</a> &middot;</li>
+          <li><a href="#portfolio">Portfolio</a> &middot;</li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -52,7 +52,7 @@
   <!-- End hero banner -->
 
   <!-- About Section -->
-  <section class="about content row">
+  <section class="about content row" id="about">
     <div class="container">
       <h3 class="text-center fade-load">Nice to Meet You</h3>
       <p class="fade-load">I'm a self-coached, self-driven Web Producer and Front-end Developer based out of Dallas, Texas. I've been tinkering with websites for over a decade now. I build clean, coherent websites and apps to respond to the needs of a rapidly and ever-changing population in a dynamic market.</p>
@@ -61,7 +61,7 @@
   <!-- End About Section -->
 
   <!-- Skills Section -->
-  <section class="skills content row primary-section">
+  <section class="skills content row primary-section" id="skills">
     <div class="container">
       <h3 class="text-center fade-load">Skills and Tools</h3>
       <div class="skill-bar fade-load">
@@ -101,7 +101,7 @@
   <!-- End Skills Section -->
 
   <!-- Portfolio Section -->
-  <section class="portfolio content row">
+  <section class="portfolio content row" id="portfolio">
     <div class="container">
       <h3 class="text-center fade-load">Portfolio</h3>
       <h4 class="text-center fade-load">Some of my recent work</h4>
@@ -110,11 +110,30 @@
   <!-- End Portfolio Section -->
 
   <!-- Begin Contact Section -->
-  <section class="contact content row primary-section">
+  <section class="contact content row primary-section" id="contact">
     <div class="container">
      <h3 class="text-center fade-load">Contact Me</h3>
      <div class="form-map row">
-      <div class="contact-form">Form</div>
+      <div class="contact-form">
+        <form action="form-processing.php" method="post">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="user_name">
+          </div>
+          <div>
+            <label for="mail">E-mail Address</label>
+            <input type="email" id="mail" name="user_mail">
+          </div>
+          <div>
+            <label for="msg">Message</label>
+            <textarea id="msg" name="user_message"></textarea>
+          </div>
+          <div class="form-buttons">
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button>
+          </div>
+        </form>
+      </div>
       <div class="map">
         <div id="map">
           <script>
@@ -139,8 +158,9 @@
 <!-- End Contact Section -->
 
 <!-- Footer -->
-<footer class="content row">
-  <div class="container">
+<footer class="row">
+  <div class="container text-center">
+    <p>©2017 Copyright Ansel Colvin</p>
   </div>
 </footer>
 <!-- End Footer -->
