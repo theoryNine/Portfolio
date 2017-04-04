@@ -110,6 +110,16 @@ section {
 #right-resume {
   border-bottom-right-radius: 150px; }
 
+.contact-form {
+  width: 100%; }
+
+.map {
+  width: 100%; }
+
+#map {
+  height: 13em;
+  width: 100%; }
+
 .portfolio h3 {
   margin-bottom: 5px; }
 
@@ -141,7 +151,7 @@ video {
   width: 100%;
   z-index: 1; }
 
-@media (min-width: 500px) {
+@media (min-width: 600px) {
   .nav-bar {
     font-size: 1.2em;
     text-align: left;
@@ -158,7 +168,13 @@ video {
     .logo img {
       max-width: 55px; }
   .skill-card {
-    width: 25%; } }
+    width: 25%; }
+  .contact-form {
+    display: inline-block;
+    width: 49%; }
+  .map {
+    display: inline-block;
+    width: 49%; } }
 
 @media (min-width: 769px) {
   .content {
