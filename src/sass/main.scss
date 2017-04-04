@@ -1,9 +1,14 @@
 @import 'variables';
 @import 'text-styles';
 
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
 // Section styles
 .content {
-  padding: 20px 5px;
+  padding: 35px 5px;
 }
 
 html {
@@ -20,13 +25,19 @@ body {
   max-width: 900px;
 }
 
+.fade-load {
+  animation: fadein 3s;
+}
+
 .hero {
-  color: $dark-gray;
+  box-shadow: 2px 1px 20px $dark-gray;
+  color: $white;
   //font-family: 'Inika', serif;
   height: 550px;
   margin-top: 50px;
   overflow: hidden;
   position: relative;
+  text-shadow: 1px 1px 2px black; 
 
   h1 {
     font-size: 3em;
@@ -45,19 +56,31 @@ h3 {
 }
 
 .logo {
+  animation: fadein 3s;
   display: none;
 }
 
-.primary-section {
-  background-color: $light-gray;
+p {
+  line-height: 2em;
 }
 
-section {
-  margin-right: 0;
+.primary-section {
+  //background-color: $light-gray;
+  background: repeating-linear-gradient(
+    45deg,
+    $white,
+    $white 10px,
+    $light-gray 10px,
+    $light-gray 20px
+  );
 }
 
 .row {
   width: 100%;
+}
+
+section {
+  margin-right: 0;
 }
 
 // Nav Styles
@@ -72,6 +95,7 @@ section {
 }
 
 .nav-bar {
+  animation: fadein 3s;
   display: inline-block;
   font-size: 1em;
   text-align: center;
@@ -84,7 +108,6 @@ section {
     li {
       display: inline-block;
       list-style-type: none;
-      margin-left: .5em;
     }
   }
 }
@@ -93,7 +116,7 @@ section {
 .resumes {
   button {
     background-color: $white;
-    border: 1px solid $dark-gray;
+    border: 1px solid $gray;
     color: $black;
     font-size: 1em;
     height: 50px;
@@ -104,7 +127,9 @@ section {
 
 .resumes {
   button:hover {
-    box-shadow: -3px 0 20px 9px $white;
+    background-color: $dark-gray;
+    color: $white;
+    font-weight: 700;
   }
 }
 
@@ -116,20 +141,55 @@ section {
   border-bottom-right-radius: 150px;
 }
 
+// Portfolio Section
+.portfolio {
+
+  h3 {
+    margin-bottom: 5px;
+  }
+
+  h4 {
+    margin-top: 0;
+  }
+}
+
+// Skill Cards
+.skill-bar {
+  text-align: center;
+  width: 100%;
+}
+
+.skill-card {
+  display: inline-block;
+  font-size: 1.3em;
+  width: 49%;
+
+  ul {
+    padding-left: 0;
+
+    li {
+      list-style-type: none;
+    }
+  }
+}
+
 // Video styling
 video {
   height: 100%;
-  opacity: .7;
+  //opacity: .8;
   width: auto;
   z-index: 0;
 }
 
 .overlay {
+  animation: fadein 3s;
   position: absolute;
   top: 20%;
   width: 100%;
   z-index: 1;
 }
+
+// Other Styles
 
 // Breakpoints
 
@@ -163,6 +223,9 @@ video {
       max-width: 55px;
     }
   }
+  .skill-card {
+    width: 25%;
+  }
 }
 
 // Desktop
@@ -181,6 +244,7 @@ video {
   }
 
   video {
+    background-color: $dark-gray;
     height: auto;
     width: 100%;
   }

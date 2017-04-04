@@ -10,8 +10,14 @@
 .text-right {
   text-align: right; }
 
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
 .content {
-  padding: 20px 5px; }
+  padding: 35px 5px; }
 
 html {
   font-size: 16px; }
@@ -24,12 +30,17 @@ body {
   margin: 0 auto;
   max-width: 900px; }
 
+.fade-load {
+  animation: fadein 3s; }
+
 .hero {
-  color: #222222;
+  box-shadow: 2px 1px 20px #222222;
+  color: #f8f7f9;
   height: 550px;
   margin-top: 50px;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  text-shadow: 1px 1px 2px black; }
   .hero h1 {
     font-size: 3em;
     margin-bottom: 0; }
@@ -42,16 +53,20 @@ h3 {
   margin-top: 0; }
 
 .logo {
+  animation: fadein 3s;
   display: none; }
 
-.primary-section {
-  background-color: #f1f1f1; }
+p {
+  line-height: 2em; }
 
-section {
-  margin-right: 0; }
+.primary-section {
+  background: repeating-linear-gradient(45deg, #f8f7f9, #f8f7f9 10px, #f1f1f1 10px, #f1f1f1 20px); }
 
 .row {
   width: 100%; }
+
+section {
+  margin-right: 0; }
 
 .navigation {
   background-color: #f8f7f9;
@@ -63,6 +78,7 @@ section {
   z-index: 50; }
 
 .nav-bar {
+  animation: fadein 3s;
   display: inline-block;
   font-size: 1em;
   text-align: center;
@@ -72,12 +88,11 @@ section {
     padding-left: 0; }
     .nav-bar ul li {
       display: inline-block;
-      list-style-type: none;
-      margin-left: .5em; }
+      list-style-type: none; }
 
 .resumes button {
   background-color: #f8f7f9;
-  border: 1px solid #222222;
+  border: 1px solid #b9bfc9;
   color: #000;
   font-size: 1em;
   height: 50px;
@@ -85,7 +100,9 @@ section {
   z-index: 10; }
 
 .resumes button:hover {
-  box-shadow: -3px 0 20px 9px #f8f7f9; }
+  background-color: #222222;
+  color: #f8f7f9;
+  font-weight: 700; }
 
 #left-resume {
   border-top-left-radius: 150px; }
@@ -93,13 +110,32 @@ section {
 #right-resume {
   border-bottom-right-radius: 150px; }
 
+.portfolio h3 {
+  margin-bottom: 5px; }
+
+.portfolio h4 {
+  margin-top: 0; }
+
+.skill-bar {
+  text-align: center;
+  width: 100%; }
+
+.skill-card {
+  display: inline-block;
+  font-size: 1.3em;
+  width: 49%; }
+  .skill-card ul {
+    padding-left: 0; }
+    .skill-card ul li {
+      list-style-type: none; }
+
 video {
   height: 100%;
-  opacity: .7;
   width: auto;
   z-index: 0; }
 
 .overlay {
+  animation: fadein 3s;
   position: absolute;
   top: 20%;
   width: 100%;
@@ -120,7 +156,9 @@ video {
     padding-top: 5px;
     width: 12%; }
     .logo img {
-      max-width: 55px; } }
+      max-width: 55px; }
+  .skill-card {
+    width: 25%; } }
 
 @media (min-width: 769px) {
   .content {
@@ -131,6 +169,7 @@ video {
   .nav-bar {
     font-size: 1.3em; }
   video {
+    background-color: #222222;
     height: auto;
     width: 100%; } }
 

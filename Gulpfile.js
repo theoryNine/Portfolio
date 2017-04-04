@@ -30,7 +30,7 @@ gulp.task('copyMedia', function() {
 
 /* Copy image files */
 gulp.task('copyImages', function() {
-  return gulp.src('./src/images/**.*')
+  return gulp.src('./src/images/*/**.*')
   .pipe(gulp.dest('./dist/images'));
 });
 
