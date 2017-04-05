@@ -357,7 +357,7 @@ div.panel {
     height: auto;
     width: 100%; } }
 
-@media (min-width: 769px) and (max-width: 1000px) {
+@media (min-width: 769px) and (max-width: 1255px) {
   video {
     height: 100%;
     width: auto; } }
