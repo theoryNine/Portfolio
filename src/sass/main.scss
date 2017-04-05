@@ -34,7 +34,7 @@ body {
 }
 
 .fade-load {
-  animation: fadein 3s;
+  animation: fadein 1s;
 }
 
 .contact {
@@ -233,12 +233,40 @@ label {
 // Portfolio Section
 .portfolio {
 
+  p {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
   h3 {
     margin-bottom: 5px;
   }
 
   h4 {
     margin-top: 0;
+  }
+}
+
+.port-logo {
+  margin-bottom: 1em;
+
+  img {
+    height: 55px;
+    width: auto;
+    max-width: 100%;
+  }
+}
+
+.screenshot {
+  display: block;
+  text-align: center;
+  width: 100%;
+
+  img {
+    border: 1px solid $dark-gray;
+    height: auto;
+    max-width: 100%;
+    width: 100%;
   }
 }
 
@@ -328,6 +356,34 @@ video {
   background-color: $gitlab-brand-active;
 }
 
+/* Style the buttons that are used to open and close the accordion panel */
+button.accordion {
+    background-color: $white;
+    border: 1px solid $gray;
+    color: $dark-gray;
+    cursor: pointer;
+    margin-top: 1em;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion:hover {
+    background-color: #ddd;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+  padding: 0 18px;
+  padding-top: 1em;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
 // Breakpoints
 
 
@@ -336,6 +392,19 @@ video {
 .contact-form {
   display: inline-block;
   width: 49%;
+}
+
+.screenshot {
+  display: inline-block;
+  text-align: center;
+  width: 49%;
+
+  img {
+    border: 1px solid $dark-gray;
+    height: 100%;
+    max-width: 100%;
+    width: auto;
+  }
 }
 
   .nav-bar {
@@ -365,7 +434,14 @@ video {
 
     img {
       max-width: 55px;
+      -webkit-transition: -webkit-transform .8s ease-in-out;
+        transition: transform .8s ease-in-out;
     }
+  }
+
+  .logo img:hover {
+    -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
   }
   .skill-card {
     width: 25%;
