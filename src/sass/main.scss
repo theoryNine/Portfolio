@@ -178,58 +178,58 @@ p {
     height: 4em;
     max-width: 100%;
     width: 97%;  
-    }
   }
+}
 
-  .form-map {
-    margin-bottom: 1em;
-    width: 100%;
-  }
+.form-map {
+  margin-bottom: 1em;
+  width: 100%;
+}
 
-  .form-buttons {
-    margin-bottom: 1em;
-    margin-top: 1em;
+.form-buttons {
+  margin-bottom: 1em;
+  margin-top: 1em;
 
-    button {
-      border: 1px solid $dark-gray;
-      color: $white;
-      font-family: 'Alegreya', 'Exo 2', cursive !important;
-      font-size: 1.3em;
-      height: 40px;
-      width: 49%;
-    }
-
-    [type="submit"] {
-      background-color: $success;
-    }
-
-    [type="submit"]:hover {
-      background-color: #96db90;
-    }
-
-    [type="reset"] {
-      background-color: $fail;
-    }
-
-    [type="reset"]:hover {
-      background-color: #ff002e;
-    }
-  }
-
-  .map {
-    width: 100%;
-  }
-
-  #map {
+  button {
     border: 1px solid $dark-gray;
-    height: 17em;
-    width: 98%;
+    color: $white;
+    font-family: 'Alegreya', 'Exo 2', cursive !important;
+    font-size: 1.3em;
+    height: 40px;
+    width: 49%;
   }
 
-  label {
-    display: block;
-    width: 100%;
+  [type="submit"] {
+    background-color: $success;
   }
+
+  [type="submit"]:hover {
+    background-color: #96db90;
+  }
+
+  [type="reset"] {
+    background-color: $fail;
+  }
+
+  [type="reset"]:hover {
+    background-color: #ff002e;
+  }
+}
+
+.map {
+  width: 100%;
+}
+
+#map {
+  border: 1px solid $dark-gray;
+  height: 17em;
+  width: 98%;
+}
+
+label {
+  display: block;
+  width: 100%;
+}
 
 // Portfolio Section
 .portfolio {
