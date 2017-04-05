@@ -44,7 +44,7 @@ body {
 .hero {
   box-shadow: 2px 1px 20px $dark-gray;
   color: $white;
-  //font-family: 'Inika', serif;
+  font-family: 'Alegreya', cursive;
   height: 550px;
   margin-top: 50px;
   overflow: hidden;
@@ -415,7 +415,6 @@ div.panel {
 
   .hero {
     h1 {
-      font-family: 'Alegreya', cursive;
       font-size: 5em;
     }
 
