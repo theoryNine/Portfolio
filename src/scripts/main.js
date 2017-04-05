@@ -601,25 +601,3 @@ for (i = 0; i < acc.length; i++) {
   }
 }
 
-
-// Fade load the video
-var e = document.getElementById("heroVid");
-e.style.opacity = 0;
-
-var vid = document.getElementById("heroVid");
-vid.oncanplaythrough = function() {
-    setTimeout(function() {
-        var e = document.getElementById('heroVid');
-        fade(e);
-    }, 1000);
-};
-
-function fade(element) {
-    var op = 0;
-    var timer = setInterval(function() {
-        if (op >= 1) clearInterval(timer);
-        element.style.opacity = op;
-        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
-        op += op * 0.1 || 0.1;
-    }, 50);
-}
