@@ -49,7 +49,7 @@ body {
   margin-top: 50px;
   overflow: hidden;
   position: relative;
-  text-shadow: 1px 1px 2px black;
+  text-shadow: 1px 1px 2px $black;
 
   h1 {
     font-size: 3em;
@@ -84,7 +84,7 @@ p {
     $white 10px,
     $light-gray 10px,
     $light-gray 20px
-  );
+    );
 }
 
 .row {
@@ -177,58 +177,59 @@ p {
     border: 1px solid $dark-gray;
     height: 4em;
     max-width: 100%;
-    width: 97%;  }
-}
+    width: 97%;  
+    }
+  }
 
-.form-map {
-  margin-bottom: 1em;
-  width: 100%;
-}
+  .form-map {
+    margin-bottom: 1em;
+    width: 100%;
+  }
 
-.form-buttons {
-  margin-bottom: 1em;
-  margin-top: 1em;
+  .form-buttons {
+    margin-bottom: 1em;
+    margin-top: 1em;
 
-  button {
+    button {
+      border: 1px solid $dark-gray;
+      color: $white;
+      font-family: 'Alegreya', 'Exo 2', cursive !important;
+      font-size: 1.3em;
+      height: 40px;
+      width: 49%;
+    }
+
+    [type="submit"] {
+      background-color: $success;
+    }
+
+    [type="submit"]:hover {
+      background-color: #96db90;
+    }
+
+    [type="reset"] {
+      background-color: $fail;
+    }
+
+    [type="reset"]:hover {
+      background-color: #ff002e;
+    }
+  }
+
+  .map {
+    width: 100%;
+  }
+
+  #map {
     border: 1px solid $dark-gray;
-    color: $white;
-    font-family: 'Alegreya', 'Exo 2', cursive !important;
-    font-size: 1.3em;
-    height: 40px;
-    width: 49%;
+    height: 17em;
+    width: 98%;
   }
 
-  [type="submit"] {
-    background-color: $success;
+  label {
+    display: block;
+    width: 100%;
   }
-
-  [type="submit"]:hover {
-    background-color: #96db90;
-  }
-
-  [type="reset"] {
-    background-color: $fail;
-  }
-
-  [type="reset"]:hover {
-    background-color: #ff002e;
-  }
-}
-
-.map {
-  width: 100%;
-}
-
-#map {
-  border: 1px solid $dark-gray;
-  height: 17em;
-  width: 98%;
-}
-
-label {
-  display: block;
-  width: 100%;
-}
 
 // Portfolio Section
 .portfolio {
@@ -290,6 +291,38 @@ label {
   }
 }
 
+// Style the buttons that are used to open and close the accordion panel */
+button.accordion {
+  background-color: $white;
+  border: 1px solid $gray;
+  color: $dark-gray;
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: 1em;
+  padding: 18px;
+  text-align: center;
+  transition: .4s;
+  width: 100%;
+}
+
+// Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion:hover {
+  background-color: $gray;
+}
+
+// Style the accordion panel. Note: hidden by default */
+div {
+
+  .panel {
+    background-color: $true-white;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 18px;
+    padding-top: 1em;
+    transition: max-height .2s ease-out;
+  }
+}
+
 // Video styling
 video {
   height: 100%;
@@ -329,9 +362,9 @@ video {
   width: 98%;
 }
 
-  .social-bar:last-child {
-    margin-bottom: 0;
-  }
+.social-bar:last-child {
+  margin-bottom: 0;
+}
 
 .twitter {
   background-color: $twitter-brand;
@@ -357,56 +390,28 @@ video {
   background-color: $gitlab-brand-active;
 }
 
-/* Style the buttons that are used to open and close the accordion panel */
-button.accordion {
-    background-color: $white;
-    border: 1px solid $gray;
-    color: $dark-gray;
-    cursor: pointer;
-    margin-top: 1em;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    transition: 0.4s;
-}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-button.accordion:hover {
-    background-color: #ddd;
-}
-
-/* Style the accordion panel. Note: hidden by default */
-div.panel {
-  padding: 0 18px;
-  padding-top: 1em;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
-
 // Breakpoints
 
 
 // Tablet
 @media (min-width: 600px) {
-.contact-form {
-  display: inline-block;
-  width: 49%;
-}
-
-.screenshot {
-  display: inline-block;
-  text-align: center;
-  width: 49%;
-
-  img {
-    border: 1px solid $dark-gray;
-    height: auto;
-    max-width: 100%;
-    width: auto;
+  .contact-form {
+    display: inline-block;
+    width: 49%;
   }
-}
+
+  .screenshot {
+    display: inline-block;
+    text-align: center;
+    width: 49%;
+
+    img {
+      border: 1px solid $dark-gray;
+      height: auto;
+      max-width: 100%;
+      width: auto;
+    }
+  }
 
   .nav-bar {
     font-size: 1.2em;
@@ -435,13 +440,13 @@ div.panel {
     img {
       max-width: 55px;
       -webkit-transition: -webkit-transform .8s ease-in-out;
-        transition: transform .8s ease-in-out;
+      transition: transform .8s ease-in-out;
     }
   }
 
   .logo img:hover {
     -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
+    transform: rotate(360deg);
   }
   .skill-card {
     width: 25%;
@@ -464,17 +469,17 @@ div.panel {
 
   /*.form-map {
     width: 97%;
-  }*/
+    }*/
 
-  .map {
-    width: 50%;
-  }
+    .map {
+      width: 50%;
+    }
 
-  .social-bar {
-    text-align: center;
-    width: 100%;
+    .social-bar {
+      text-align: center;
+      width: 100%;
+    }
   }
-}
 
 // Desktop
 @media (min-width: 769px) {

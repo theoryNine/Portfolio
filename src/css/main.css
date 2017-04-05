@@ -50,7 +50,7 @@ body {
   margin-top: 50px;
   overflow: hidden;
   position: relative;
-  text-shadow: 1px 1px 2px black; }
+  text-shadow: 1px 1px 2px #000; }
   .hero h1 {
     font-size: 3em;
     margin-bottom: 0; }
@@ -214,6 +214,29 @@ label {
     .skill-card ul li {
       list-style-type: none; }
 
+button.accordion {
+  background-color: #f8f7f9;
+  border: 1px solid #b9bfc9;
+  color: #222222;
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: 1em;
+  padding: 18px;
+  text-align: center;
+  transition: .4s;
+  width: 100%; }
+
+button.accordion:hover {
+  background-color: #b9bfc9; }
+
+div .panel {
+  background-color: #fff;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 18px;
+  padding-top: 1em;
+  transition: max-height .2s ease-out; }
+
 video {
   height: 100%;
   width: auto;
@@ -265,31 +288,6 @@ video {
 .gitlab:hover {
   background-color: #fca326; }
 
-/* Style the buttons that are used to open and close the accordion panel */
-button.accordion {
-  background-color: #f8f7f9;
-  border: 1px solid #b9bfc9;
-  color: #222222;
-  cursor: pointer;
-  margin-top: 1em;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  transition: 0.4s; }
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-button.accordion:hover {
-  background-color: #ddd; }
-
-/* Style the accordion panel. Note: hidden by default */
-div.panel {
-  padding: 0 18px;
-  padding-top: 1em;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out; }
-
 @media (min-width: 600px) {
   .contact-form {
     display: inline-block;
@@ -337,7 +335,7 @@ div.panel {
     width: 32%; }
   /*.form-map {
     width: 97%;
-  }*/
+    }*/
   .map {
     width: 50%; }
   .social-bar {
