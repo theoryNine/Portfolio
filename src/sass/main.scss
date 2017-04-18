@@ -398,8 +398,10 @@ video {
 // Tablet
 @media (min-width: 600px) {
   .contact-form {
+    clear: none;
     display: inline-block;
-    width: 49%;
+    float: left;
+    width: 50%;
   }
 
   .screenshot {
@@ -455,8 +457,10 @@ video {
   }
 
   .map {
+    clear: none;
     display: inline-block;
-    width: 49%;
+    float: left;
+    width: 50%;
   }
 
   #map {
