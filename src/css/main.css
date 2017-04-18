@@ -124,6 +124,7 @@ p {
   border-top-right-radius: 10px; }
 
 .contact-form {
+  font-size: 16px;
   vertical-align: top;
   width: 100%; }
   .contact-form input {
@@ -141,6 +142,7 @@ p {
     width: 97%; }
 
 .form-map {
+  font-size: 0;
   margin-bottom: 1em;
   width: 100%; }
 
@@ -164,6 +166,7 @@ p {
     background-color: #ff002e; }
 
 .map {
+  font-size: 16px;
   width: 100%; }
 
 #map {
@@ -292,14 +295,12 @@ video {
 
 @media (min-width: 600px) {
   .contact-form {
-    clear: none;
     display: inline-block;
-    float: left;
     width: 50%; }
   .screenshot {
     display: inline-block;
     text-align: center;
-    width: 49%; }
+    width: 50%; }
     .screenshot img {
       border: 1px solid #222222;
       height: auto;
@@ -329,19 +330,14 @@ video {
   .skill-card {
     width: 25%; }
   .map {
-    clear: none;
     display: inline-block;
-    float: left;
-    width: 50%; }
+    width: 49%; }
   #map {
     width: 100%; }
   .social {
     color: #f8f7f9;
     display: inline-block;
     width: 32%; }
-  /*.form-map {
-    width: 97%;
-    }*/
   .map {
     width: 50%; }
   .social-bar {

@@ -159,6 +159,7 @@ p {
 
 // Contact Section
 .contact-form {
+  font-size: 16px;
   vertical-align: top;
   width: 100%;
 
@@ -183,6 +184,7 @@ p {
 }
 
 .form-map {
+  font-size: 0;
   margin-bottom: 1em;
   width: 100%;
 }
@@ -218,6 +220,7 @@ p {
 }
 
 .map {
+  font-size: 16px;
   width: 100%;
 }
 
@@ -398,16 +401,14 @@ video {
 // Tablet
 @media (min-width: 600px) {
   .contact-form {
-    clear: none;
     display: inline-block;
-    float: left;
     width: 50%;
   }
 
   .screenshot {
     display: inline-block;
     text-align: center;
-    width: 49%;
+    width: 50%;
 
     img {
       border: 1px solid $dark-gray;
@@ -457,10 +458,8 @@ video {
   }
 
   .map {
-    clear: none;
     display: inline-block;
-    float: left;
-    width: 50%;
+    width: 49%;
   }
 
   #map {
@@ -472,10 +471,6 @@ video {
     display: inline-block;
     width: 32%;
   }
-
-  /*.form-map {
-    width: 97%;
-    }*/
 
     .map {
       width: 50%;
