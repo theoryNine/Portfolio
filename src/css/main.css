@@ -299,7 +299,7 @@ video {
   .screenshot {
     display: inline-block;
     text-align: center;
-    width: 50%; }
+    width: 49%; }
     .screenshot img {
       border: 1px solid #222222;
       height: auto;
