@@ -8,9 +8,7 @@
 
 // Section styles
 .content {
-  padding-bottom: 35px;
-  padding-left: 5px;
-  padding-top: 35px;
+  padding: 35px auto 35px 5px;
 }
 
 html {
@@ -28,9 +26,7 @@ body {
 }
 
 .add-pad {
-  padding-bottom: 2em;
-  padding-left: 5px;
-  padding-top: 2em;
+  padding: 2em 0 2em 5px;
 }
 
 .fade-load {
@@ -122,6 +118,17 @@ p {
     li {
       display: inline-block;
       list-style-type: none;
+
+      ::after {
+        content: ' \00B7';
+      }
+    }
+
+    :last-child {
+
+      ::after {
+        content: '';
+      }
     }
   }
 }
@@ -159,6 +166,7 @@ p {
 
 // Contact Section
 .contact-form {
+  font-size: 16px;
   vertical-align: top;
   width: 100%;
 
@@ -183,6 +191,7 @@ p {
 }
 
 .form-map {
+  font-size: 0;
   margin-bottom: 1em;
   width: 100%;
 }
@@ -218,6 +227,7 @@ p {
 }
 
 .map {
+  font-size: 16px;
   width: 100%;
 }
 
@@ -319,8 +329,7 @@ div {
     background-color: $true-white;
     max-height: 0;
     overflow: hidden;
-    padding: 0 18px;
-    padding-top: 1em;
+    padding: 1em 18px 0;
     transition: max-height .2s ease-out;
   }
 }
@@ -399,7 +408,7 @@ video {
 @media (min-width: 600px) {
   .contact-form {
     display: inline-block;
-    width: 49%;
+    width: 50%;
   }
 
   .screenshot {
@@ -469,10 +478,6 @@ video {
     width: 32%;
   }
 
-  /*.form-map {
-    width: 97%;
-    }*/
-
     .map {
       width: 50%;
     }
@@ -486,8 +491,7 @@ video {
 // Desktop
 @media (min-width: 769px) {
   .content {
-    padding-left: 0;
-    padding-right: 0;
+    padding: auto 0;
   }
 
   .hero {
