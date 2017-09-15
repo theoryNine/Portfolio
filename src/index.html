@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Ansel Colvin | Front End Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Professional website of Ansel Colvin, Front End Developer">
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+  <link rel="stylesheet" href="./styles/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya|Exo+2" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+  <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <!-- Begin nav bar  -->
+  <section>
+    <div class="navigation">
+      <div class="container">
+        <div class="logo">
+          <a data-scroll href="#hero"><img src="images/logo.png" alt="Ansels Logo" /></a>
+        </div>
+        <nav class="nav-bar">
+          <ul>
+            <li><a data-scroll href="#about">About</a></li>
+            <li><a data-scroll href="#skills">Skills</a></li>
+            <li><a data-scroll href="#portfolio">Portfolio</a></li>
+            <li><a data-scroll href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </section>
+  <!-- End nav bar  -->
+
+  <!-- Begin hero banner -->
+  <section id="hero" class="hero white-text text-center">
+    <video autoplay loop><source src="media/hero-vid.mp4" type="video/mp4" />Sorry, your browser doesn't support embedded videos, but don't worry, you can <a href="media/hero-vid.mp4">download it</a>
+      and watch it with your favorite video player!</video>
+      <div class="overlay fade-load">
+        <h1><em>Ansel Colvin</em></h1>
+        <h2><em>Front End Developer</em></h2>
+        <div class="resumes">
+          <a href="media/Resume%20Ansel%20Colvin.pdf" target="_blank"><button id="left-resume">PDF Resume</button></a>
+          <a href="media/Resume%20Ansel%20Colvin.docx" target="_blank"><button id="right-resume">Word Resume</button></a>
+        </div>
+      </div>
+    </section>
+    <!-- End hero banner -->
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container add-pad">
+        <h3 class="text-center fade-load">Nice to Meet You</h3>
+        <p class="fade-load">I'm a self-coached, self-driven Web Producer and Front End Developer based out of Brooklyn. I've been tinkering with websites for over a decade now, and have been working professionally within the field for a few years. I build clean, coherent websites and apps to respond to the needs of a rapidly and ever-changing population in a dynamic market.</p>
+      </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- Skills Section -->
+    <section class="skills primary-section" id="skills">
+      <div class="container add-pad">
+        <h3 class="text-center fade-load">Skills and Tools</h3>
+        <div class="skill-bar fade-load">
+          <div class="skill-card">
+            <ul>
+              <li>HTML/HTML5</li>
+              <li>CSS/CSS3</li>
+              <li>JavaScript</li>
+              <li>Gulp/Grunt</li>
+              <li>SASS</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <ul>
+              <li>jQuery</li>
+              <li>JIRA</li>
+              <li>WordPress</li>
+              <li>PostCSS</li>
+              <li>Adobe AEM</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <ul>
+              <li>PHP</li>
+              <li>mySQL</li>
+              <li>Grid Layouts</li>
+              <li>D3.js</li>
+              <li>Skeleton</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Skills Section -->
+
+    <!-- Portfolio Section -->
+    <section class="portfolio fade-load" id="portfolio">
+      <div class="container add-pad">
+        <h3 class="text-center fade-load">Portfolio</h3>
+        <h4 class="text-center">Some of my recent work</h4>
+
+        <button class="accordion port-item">Charter Spectrum/Time Warner Cable</button>
+        <div class="panel">
+          <div class="port-logo text-center">
+            <img src="images/spectrum_logo.jpg" alt="Charter Spectrum logo" />
+          </div>
+          <div class="screenshot">
+            <a href="images/spectrum1_large.png" target="_blank"><img src="images/spectrum1.jpg" alt="Spectrum homepage screenshot" /></a>
+          </div>
+          <div class="screenshot">
+            <a href="images/spectrum2_large.png" target="_blank"><img src="images/spectrum2.jpg" alt="Spectrum buyflow screenshot" /></a>
+          </div>
+          <p>Client: <strong>Charter Spectrum</strong></p>
+          <p>Project Duration: <strong>24 months</strong></p>
+          <p>Live URL: <strong><a href="https://www.spectrum.com" target="_blank">https://www.spectrum.com</a></strong></p>
+          <p>Participation: <strong>Led a team of several developers and authors to develop the new Spectrum website after merger with Time Warner Cable. This project involved migrating and re-creating existing pages from a previous CMS into Adobe AEM, while developing page templates, components, and front end functionality to meet the needs of stakeholders. We work on a daily basis with back-end developers, off-shore QA teams, designers, and business members.</strong></p>
+          <p>Technologies: <strong>HTML, CSS, JavaScript, jQuery, JSON, Adobe AEM, Bootstrap</strong></p>
+        </div>
+
+        <button class="accordion port-item">AT&T</button>
+        <div class="panel">
+          <div class="port-logo text-center">
+            <img src="images/att_logo.jpg" alt="AT&T logo" />
+          </div>
+          <div class="screenshot">
+            <a href="images/att1_large.png" target="_blank"><img src="images/att1.jpg" alt="ATT homepage screenshot" /></a>
+          </div>
+          <div class="screenshot">
+            <a href="images/att2_large.png" target="_blank"><img src="images/att2.jpg" alt="ATT store screenshot" /></a>
+          </div>
+          <p>Client: <strong>AT&T</strong></p>
+          <p>Project Duration: <strong>8 months</strong></p>
+          <p>Live URL: <strong><a href="https://www.att.com" target="_blank">https://www.att.com</a></strong></p>
+          <p>Participation: <strong>Worked alongside other developers and authors to create offer modules, hero banners, landing pages, and to make site updates to meet the needs of internal stakeholders. Our work was focused on the AT&T consumer store website with an extremely high volume of traffic and incoming updates.</strong></p>
+          <p>Technologies: <strong>HTML, CSS, JavaScript, jQuery, JSON, Adobe AEM</strong></p>
+        </div>
+
+        <button class="accordion port-item">Abilene Christian University</button>
+        <div class="panel">
+          <div class="port-logo text-center">
+            <img src="images/acu_logo.jpg" alt="ACU logo" />
+          </div>
+          <div class="screenshot">
+            <a href="images/acu1.png" target="_blank"><img src="images/acu1.jpg" alt="ACU homepage screenshot" /></a>
+          </div>
+          <div class="screenshot">
+            <a href="images/acu2.png" target="_blank"><img src="images/acu2.jpg" alt="ACU Program Finder screenshot" /></a>
+          </div>
+          <p>Client: <strong>Abilene Christian University</strong></p>
+          <p>Project Duration: <strong>6 months</strong></p>
+          <p>Live URL: <strong><a href="http://www.acu.edu/" target="_blank">http://www.acu.edu</a></strong></p>
+          <p>Participation: <strong>Working alongside internal stakeholders to identify objectives and develop site UX while developing pages and migrating data from a past site. This project involves heavy work within Adobe AEM, both on the back-end and the front end.</strong></p>
+          <p>Technologies: <strong>HTML, CSS, JavaScript, jQuery, JSON, Adobe AEM</strong></p>
+        </div>
+
+        <button class="accordion port-item">Fresh Image Center of Dallas</button>
+        <div class="panel">
+          <div class="port-logo text-center">
+            <img src="images/freshimage_logo.jpg" alt="ACU logo" />
+          </div>
+          <div class="screenshot">
+            <a href="images/fi1.png" target="_blank"><img src="images/fi1.jpg" alt="Fresh Image homepage screenshot" /></a>
+          </div>
+          <div class="screenshot">
+            <a href="images/fi2.png" target="_blank"><img src="images/fi2.jpg" alt="Fresh Image screenshot" /></a>
+          </div>
+          <p>Client: <strong>Fresh Image Center of Dallas</strong></p>
+          <p>Project Duration: <strong>6 months</strong></p>
+          <p>Live URL: <strong><a href="http://www.freshimagecenter.com/" target="_blank">http://www.freshimagecenter.com</a></strong></p>
+          <p>Participation: <strong>Starting with a homepage and contact form redesign, this project evolved into a full re-themeing and update to existing components and plugins.</strong></p>
+          <p>Technologies: <strong>HTML, CSS, WordPress, PHP, MySQL, JavaScript, jQuery</strong></p>
+        </div>
+
+
+      </div>
+    </section>
+    <!-- End Portfolio Section -->
+
+    <!-- Begin Contact Section -->
+    <section class="contact primary-section" id="contact">
+      <div class="container add-pad fade-load">
+        <h3 class="text-center fade-load">Contact Me</h3>
+        <div class="form-map">
+          <div class="contact-form">
+            <form action="form-processing.php" method="post">
+              <div>
+                <label for="name">Name</label>
+                <input type="text" name="user_name">
+              </div>
+              <div>
+                <label for="mail">E-mail Address <span class="fail">(required)</span></label>
+                <input type="email" name="user_email" required>
+              </div>
+              <div>
+                <label for="msg">Message <span class="fail">(required)</span></label>
+                <textarea name="user_message" required></textarea>
+              </div>
+              <div class="form-buttons">
+                <button type="submit"><em>Submit</em></button>
+                <button type="reset"><em>Clear</em></button>
+              </div>
+            </form>
+          </div>
+          <div class="map">
+            <div id="map">
+              <script>
+                function initMap() {
+                  var uluru = {lat: 40.714501, lng: -73.961289};
+                  var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 10,
+                    center: uluru
+                  });
+                  var marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map
+                  });
+                }
+              </script>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="social-bar">
+          <a href="https://www.linkedin.com/in/anselcolvin/" target="_blank"><div class="social linkedin"><i class="fa fa-linkedin" aria-hidden="false"></i></div></a>
+          <a href="https://gitlab.com/anselcolvin" target="_blank"><div class="social gitlab"><i class="fa fa-gitlab" aria-hidden="false"></i></div></a>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Section -->
+
+    <!-- Footer -->
+    <footer class="fade-load">
+      <div class="container text-center">
+        <p>©2017 Copyright Ansel Colvin</p>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="./scripts/main.js" type="text/javascript"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfldS_8yLaRl1eav3HdUS1Xf-gFy6aiw4&callback=initMap">
+  </script>
+  <script src="https://use.fontawesome.com/43580bea7c.js"></script>
+  <script>smoothScroll.init('a[href^="#"]');</script>
+
+</body>
+
+</html>
